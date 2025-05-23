@@ -1,0 +1,2 @@
+# basic-scripts
+learning stuff
