@@ -1,2 +1,3 @@
 # basic-scripts
-learning stuff
+
+# simple scripts to apply concepts or commands im learning in bash / shell / terminal / linux / etc etc 
