@@ -18,7 +18,7 @@ afplay "catsound.mp3" &
 /usr/local/bin/dialog \
 --title "🐈 cat fact" \
 --message "$RANDOM_FACT" \
---icon "/Users/kaiju33/Pictures/icons/whitecat.png" \
+--icon "whitecat.png" \
 --width 400 \
 --height 300 \
 --moveable \
