@@ -209,30 +209,33 @@ case $choice in
             ((hp[0]--))
 
             echo "Remaining HP: ${hp[0]}"
-
-            if (( hp[0] <= 0 )); then
-                type_out 'The rest of the day is a blur of mediocre'
-                type_out 'cat care. you call it a day early zzzz'
-                type_out 'zzzz'
-                sleep 1
-                type_out 'zzzzzzzzzz'
-                sleep 1
-                type_out 'zzzzzzzzzzzzzzz'
-                type_out 'Later in the night, cat assasinates you.'
-                type_out 'cat fact: cat has hooks in tongue to eat meat'
-                type_out '---the end---'
-                exit 1
-            fi
+                    #HP check
+                    if (( hp[0] <= 0 )); then
+                    type_out 'The rest of the day is a blur of mediocre'
+                    type_out 'cat care. you call it a day early zzzz'
+                    sleep 1
+                    type_out 'zzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzzzzzzz'
+                    type_out 'Later in the night, cat assasinates you.'
+                    type_out 'cat fact: cat has hooks in tongue to eat meat'
+                    type_out '---the end---'
+                    exit 1
+                    fi
             ;;
+        
         # Choice Eat @ couch
         2)
-            type_out "you sit on the couch, cereal in hand"
-            type_out "$catname stares, but you hold your ground"
-            type_out "you both live to eat another day"
+            type_out 'you sit at the couch'
+            type_out 'you turn on your fav show'
+            type_out "suddenly $catname jumps up on the couch"
+            type_out 'and smacks the cereal bowl over the edge'
+            type_out 'the bowl shatters on the floor'
+            type_out '
             ;;
-        *)
-            type_out "that's not a valid cereal eating spot"
-            ;;
+    
     esac
     ;;
 # Choice Feed cat
@@ -241,8 +244,5 @@ case $choice in
     type_out "the cat punishes you by swatting your hand"
     type_out "then leaps off your face, digging its hind paws into your cheek"
     type_out "you are awake"
-    ;;
-*)
-    type_out "invalid choice"
     ;;
 esac
