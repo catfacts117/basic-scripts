@@ -48,7 +48,7 @@ echo '⣿⣿⣿⣶⣿⣿⣿⣿⣿⠋⡹⠙⣿⣿⣿⡇⠀⠀'
 echo '⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣾⣿⣿⠛⠀⠀⠀⠀'⠀
 echo '⣿⣿⣿⣿⣿4⣿⣿⣿⣿⣿⡟⠛⠁⠀⠀⠀⠀⠀⠀'
 echo '⣿⣿⡿⠻⠿⠿⠿⠿⠛⠹⠑⠀⠀'
-echo '⠟'
+echo "⠟          ⡇' "
 type_out 'a CYOA short story about enjoying a weekend with your feline friend'
 
 echo ------
