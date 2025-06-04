@@ -170,18 +170,19 @@ type_out 'stretch, and rub your tired eyes'
 type_out "$catname looks at you innocently"
 type_out 'from below and mews'
 echo
-echo '        ⣼⣿⣷⣌  '
-echo '  ⢰⣿⣶⣌⣥⣶⣿⣿⡟⠻⢛⢷⣦⡍  ⡴⣲⡲.  '
+echo '        ⣼⣿⣷\  '
+echo '   /⣿⣶⣌⣥⣶⣿⣿⡟⠻⢛⢷⣦  ⡴⣲⡲.  '
 echo '  ⣾⣿⡿⡛⢻⣿⣿⣿⣇⠩⠤⣹⣿⡿ ⣼⣯⣤⣼⡷ '
-echo '  ⣿⣿⡌⠀⡁⢸⢿⣦⣻⣿⣿⣿⣿⣿.⣿⣿⣿⣿⡇ '
-echo ' ⢹⣿⣿⣿⣶⣾⣿⣿⣷⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿ '
-echo ' ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇  '
-echo ' ⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ '
-echo '  ⠘⣿⣿⣿⣿⣿⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ '
-echo '  ⢈⣿⣿⣿⣿⣿⣿⡎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧ '
-echo '  ⣹⣿⣿⣿⣿⣿⣿⣿⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷ '
-echo ' ⢰⣿⣿⣿⣿⣦⣍⣉⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆'
+echo '  |⣿⡌⠀⡁⢸⢿⣦⣻⣿⣿⣿⣿⣿.⣿⣿⣿⣿| '
+echo ' ⢹⣿⣿⣿⣶⣾⣿⣿⣷⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿/ '
+echo '  |⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿/  '
+echo ' ⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿/ '
+echo '  ⠘⣿⣿⣿⣿⣿⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿| '
+echo '   ⣿⣿⣿⣿⣿⣿⡎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿ '
+echo '  ⣹⣿⣿⣿⣿⣿⣿⣿⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿| '
+echo '   ⣿⣿⣿⣿⣦⣍⣉⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿/'
 sleep 2
+echo
 type_out 'your stomach grumbles'
 type_out 'it is time for breakfast'
 type_out 'you head toward the kitchen'
@@ -205,8 +206,10 @@ case $choice in
     type_out 'you pour lucky charms and milk'
     type_out 'out into the bowl. looks good.'
     
+    echo '------'
     add_item "cereal bowl"
-
+    echo '------'
+    
     type_out "where do you want to eat?"
     echo '------'
     echo '1. eat cereal at the table'
@@ -298,8 +301,10 @@ case $choice in
     type_out 'and dives for the cat sensu beans'
     type_out 'you pick up and put the toy mouse in your pocket'
     
+    echo '------'
     add_item "toy mouse"
-
+    echo '------'
+    
     type_out "$catname finishes eating cat fuel"
     type_out 'your stomach growls again'
     
