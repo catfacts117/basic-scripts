@@ -35,6 +35,20 @@ hp=(3)
 
 # Begin
 
+echo 
+echo 'coded by'
+echo 'by starskipper'
+echo 'may the force b w u'
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+
 echo '___________      ________ '
 echo '\__    ___/___   \_____  \__  _  ______ '
 echo '  |    | /  _ \   /   |   \ \/ \/ /    \ '
