@@ -19,8 +19,7 @@ add_item() {
   # Check if item already exists to avoid duplicates
   if ! has_item "$item"; then
     inventory+=("$item")
-    echo ">> You acquired a $item."
-    echo ">> You have $inventory."
+    echo ">> you acquired a $item."
   fi
 }
 
@@ -34,7 +33,7 @@ remove_item () {
         fi
     done
     inventory=("${new_inventory[@]}")  # Now backpack has updated items
-    echo ">> $item_to_remove removed from $inventory."
+    echo ">> $item_to_remove was removed from your $inventory."
 }
 
     
@@ -73,18 +72,18 @@ echo
 echo
 echo
 
-echo '___________      ________ '
-echo '\__    ___/___   \_____  \__  _  ______ '
-echo '  |    | /  _ \   /   |   \ \/ \/ /    \ '
-echo '  |    |(  <_> ) /    |    \     /   |  \ '
-echo '  |____| \____/  \_______  /\/\_/|___|  / '
-echo '                         \/           \/ '
-echo '         _________         __ '
-echo '_____    \_   ___ \_____ _/  |_ '
-echo '\__  \   /    \  \/\__  \\   __\ '
-echo ' / __ \_ \     \____/ __ \|  | '
-echo '(____  /  \______  (____  /__| '
-echo '     \/          \/     \/ '
+echo '___________       ________ '
+echo '\__    ___/___    \_____  \__  _  ______ '
+echo '  |    | /  _ \    /   |   \ \/ \/ /    \ '
+echo '  |    |(  <_> )  /    |    \     /   |  \ '
+echo '  |____| \____/   \_______  /\/\_/|___|  / '
+echo '                          \/           \/ '
+echo '          _________         __ '
+echo '_____     \_   ___ \_____ _/  |_ '
+echo '\__  \    /    \  \/\__  \\   __\ '
+echo ' / __ \_  \     \____/ __ \|  | '
+echo '(____  /   \______  (____  /__| '
+echo '     \/           \/     \/ '
 
 echo ' ⠀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
 echo '⠀⣼⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
@@ -106,7 +105,7 @@ echo ------
 type_out 'what is your feline friends name?'
 echo
 read catname
-echo " $catname is a good name "
+echo " >> $catname is a good name "
 
 
 ### 1.0
@@ -124,10 +123,10 @@ type_out 'there is a cat on your face'
 type_out 'you cant breathe'
 type_out 'how do you react?'
 
-echo ------
+echo '------'
 echo '1. go back to sleep'
 echo '2. move cat gently'
-echo ------
+echo '------'
 echo
 read choice
 
@@ -205,6 +204,7 @@ case $choice in
     type_out "$catname mews impatiently"
     type_out 'you pour lucky charms and milk'
     type_out 'out into the bowl. looks good.'
+    
     add_item "cereal bowl"
 
     type_out "where do you want to eat?"
@@ -254,9 +254,14 @@ case $choice in
             type_out "suddenly $catname jumps up on the couch"
             type_out 'and smacks the cereal bowl over the edge'
             type_out 'the bowl shatters on the floor'
+            
+            sleep 1
+            
+            remove_item "cereal bowl"
+            
             type_out "$catname starts eating your cereal for breakfast"
-            type_out 'you move to clean it up and step on a broken bowl shard'
-            type_out 'you cry out and cat looks pleased, and eats lucky charms'
+            type_out 'you move to clean up & step on a cereal bowl shard'
+            type_out "you cry out. $catname eats lucky charms fast"
             type_out 'your day is off to a bad start, LOSE 2 hp'
             sleep 1
 
@@ -295,12 +300,10 @@ case $choice in
     
     add_item "toy mouse"
 
-    type_out 'TEST POINT'
-    echo '------'
-    echo '1. eat cereal at the table'
-    echo '2. eat cereal at the couch'
-    echo '------'
-    echo
+    type_out "$catname finishes eating cat fuel"
+    type_out 'your stomach growls again'
+    
+    
     read choice
 
     case $choice in
