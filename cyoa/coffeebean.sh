@@ -184,20 +184,25 @@ case $choice in
                             ((hp[0]--)) echo "Remaining HP: ${hp[0]}"
                         
                         if (( hp[0] <= 0 )); then
-    type_out 'The rest of the day is a blur of mediocre'
-    type_out 'cat care. you call it a day early zzzz'
-    type_out 'zzzz'
-    sleep 1
-    type_out 'zzzzzzzzzz'
-    sleep 1
-    type_out 'zzzzzzzzzzzzzzz'
-    type_out 'Later in the night, cat assasinates you.'
-    type_out 'cat fact: cat has hooks in tongue to eat meat'
-    type_out 'the end'
-    exit 1  # exits the script so the game stops here
-fi
-                        
-        ;;
+                            type_out 'The rest of the day is a blur of mediocre'
+                            type_out 'cat care. you call it a day early zzzz'
+                            type_out 'zzzz'
+                            sleep 1
+                            type_out 'zzzzzzzzzz'
+                            sleep 1
+                            type_out 'zzzzzzzzzzzzzzz'
+                            type_out 'Later in the night, cat assasinates you.'
+                            type_out 'cat fact: cat has hooks in tongue to eat meat'
+                            type_out 'the end'
+    
+                                exit 1  # exits the script so the game stops here
+                        fi
+               # Choice Eat @ couch
+                    2.)
+                    
+                    
+                        esac
+                            ;;
         
 # Choice Feed cat
     2)
