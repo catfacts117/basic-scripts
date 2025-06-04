@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# User Defined Commands
+# User Defined Functions
 
 # slow output
 type_out() {
@@ -20,9 +20,24 @@ add_item() {
   if ! has_item "$item"; then
     inventory+=("$item")
     echo ">> You acquired a $item."
+    echo ">> You have $inventory."
   fi
 }
 
+#remove_item
+remove_item () {
+    local item_to_remove="$1"
+    local new_inventory=()
+    for item in "${inventory[@]}"; do
+     if [[ "$item" != "$item_to_remove" ]]; then
+            new_inventory+=("$item")
+        fi
+    done
+    inventory=("${new_inventory[@]}")  # Now backpack has updated items
+    echo ">> $item_to_remove removed from $inventory."
+}
+
+    
 #item_check
 has_item() {
   local item="$1"
@@ -43,6 +58,11 @@ echo
 echo 'coded by'
 echo 'by starskipper'
 echo 'may the force b w u'
+echo
+echo
+echo
+echo
+echo
 echo
 echo
 echo
@@ -78,7 +98,8 @@ echo '⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣾⣿⣿⠛⠀⠀⠀⠀'⠀
 echo '⣿⣿⣿⣿⣿4⣿⣿⣿⣿⣿⡟⠛⠁⠀⠀⠀⠀⠀⠀'
 echo '⣿⣿⡿⠻⠿⠿⠿⠿⠛⠹⠑⠀⠀'
 echo "⠟          ⡇' "
-type_out 'a CYOA short story about enjoying a weekend with your feline friend'
+type_out 'a CYOA short story about enjoying a'
+type_out 'weekend with your feline friend'
 
 echo ------
 
@@ -203,7 +224,7 @@ case $choice in
             type_out 'suddenly you feel a sharp pain in'
             type_out 'your ankle. kitty attack!'
             type_out "$catname is not pleased"
-            type_out 'you have been warned, lose 1 hp'
+            type_out 'you have been warned, LOSE 1 hp'
             sleep 1
 
             ((hp[0]--))
@@ -236,7 +257,7 @@ case $choice in
             type_out "$catname starts eating your cereal for breakfast"
             type_out 'you move to clean it up and step on a broken bowl shard'
             type_out 'you cry out and cat looks pleased, and eats lucky charms'
-            type_out 'your day is off to a bad start, lose 2 hp'
+            type_out 'your day is off to a bad start, LOSE 2 hp'
             sleep 1
 
             ((hp[0]-=2))
@@ -261,11 +282,92 @@ case $choice in
     
     esac
     ;;
+    
 # Choice Feed cat
 2)
-    type_out "you attempt to pick up the cat"
-    type_out "the cat punishes you by swatting your hand"
-    type_out "then leaps off your face, digging its hind paws into your cheek"
-    type_out "you are awake"
+    type_out 'you fall prey to the mews'
+    type_out 'you reach for the cupboard & grab kittysnax'
+    type_out "$catname purrs around your legs"
+    type_out 'you put the bowl of cat sustenance on the floor'
+    type_out "$catname drops a toy mouse they have in their mouth"
+    type_out 'and dives for the cat sensu beans'
+    type_out 'you pick up and put the toy mouse in your pocket'
+    
+    add_item "toy mouse"
+
+    type_out 'TEST POINT'
+    echo '------'
+    echo '1. eat cereal at the table'
+    echo '2. eat cereal at the couch'
+    echo '------'
+    echo
+    read choice
+
+    case $choice in
+        # Choice Eat @ table
+        1)
+            type_out 'you sit at the table'
+            type_out 'you enjoy spoonful after spoonful'
+            type_out 'its a great saturday'
+            type_out 'suddenly you feel a sharp pain in'
+            type_out 'your ankle. kitty attack!'
+            type_out "$catname is not pleased"
+            type_out 'you have been warned, LOSE 1 hp'
+            sleep 1
+
+            ((hp[0]--))
+
+            echo "Remaining HP: ${hp[0]}"
+                    #HP check
+                    if (( hp[0] <= 0 )); then
+                    type_out 'The rest of the day is a blur of mediocre'
+                    type_out 'cat care. you call it a day early zzzz'
+                    sleep 1
+                    type_out 'zzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzzzzzzz'
+                    type_out 'Later in the night, cat assasinates you.'
+                    type_out 'cat fact: cat has hooks in tongue to eat meat'
+                    type_out '---the end---'
+                    exit 1
+                    fi
+            ;;
+        
+        # Choice Eat @ couch
+        2)
+            type_out 'you sit at the couch'
+            type_out 'you turn on your fav show'
+            type_out "suddenly $catname jumps up on the couch"
+            type_out 'and smacks the cereal bowl over the edge'
+            type_out 'the bowl shatters on the floor'
+            type_out "$catname starts eating your cereal for breakfast"
+            type_out 'you move to clean it up and step on a broken bowl shard'
+            type_out 'you cry out and cat looks pleased, and eats lucky charms'
+            type_out 'your day is off to a bad start, LOSE 2 hp'
+            sleep 1
+
+            ((hp[0]-=2))
+            
+            echo "Remaining HP: ${hp[0]}"
+                    #HP check
+                    if (( hp[0] <= 0 )); then
+                    type_out 'The rest of the day is a blur of mediocre'
+                    type_out 'cat care. you call it a day early zzzz'
+                    sleep 1
+                    type_out 'zzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzzzzzzz'
+                    type_out 'Later in the night, cat assasinates you.'
+                    type_out 'cat fact: cat has hooks in tongue to eat meat'
+                    type_out '---the end---'
+                    exit 1
+                    fi
+            ;;
+    
+    esac
     ;;
 esac
