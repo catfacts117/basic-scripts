@@ -31,6 +31,7 @@ has_item() {
 
 # Arrays
 inventory=()
+hp=(3)
 
 # Begin
 
@@ -93,6 +94,7 @@ read choice
 
 case $choice in
 
+# Choice Zzzz
     1)
         type_out "the sound of $catname's purring helps "
         type_out 'you drift back to sleep.'
@@ -102,7 +104,8 @@ case $choice in
         type_out '---the end.---'
         exit
         ;;
-    
+
+# Choice Move kitty
     2)
         type_out "you attempt to pick up $catname."
         type_out "$catname punishes you by swatting your hand,"
@@ -135,6 +138,7 @@ echo '⣿⡧⢈⣿⣿⣿⣿⣿⣿⡎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠨⣿'
 echo '⣿⡇⣹⣿⣿⣿⣿⣿⣿⣿⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠘'
 echo '⡟⢰⣿⣿⣿⣿⣦⣍⣉⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆'
 type_out 'from below and mews'
+sleep 1.5
 type_out 'your stomach grumbles'
 type_out 'it is time for breakfast'
 type_out 'you head toward the kitchen'
@@ -150,11 +154,52 @@ echo
 read choice
 
 case $choice in
-
+# Choice Feed yourself
     1)
-                exit
+          type_out 'you reach for the cupboard'
+          type_out "$catname mews impatiently"
+          type_out 'you pour lucky charms and milk'
+          type_out 'out into the bowl. looks good.'
+          add_item "cereal bowl"
+          type_out "where do you want to eat?"
+            echo '------'
+            echo '1. eat cereal at the table'
+            echo '2. eat cereal at the couch'
+            echo '------'
+            echo
+            read choice
+            
+                case $choice in
+                # Choice Eat @ table
+                    1)
+                        type_out 'you sit at the table'
+                        type_out 'you enjoy spoonful after spoonful'
+                        type_out 'its a great saturday'
+                        type_out 'suddenly you feel a sharp pain in'
+                        type_out 'your ankle. kitty attack!'
+                        type_out "$catname is not pleased"
+                        type_out 'you have been warned, lose 1 hp'
+                            sleep 1
+                        
+                            ((hp[0]--)) echo "Remaining HP: ${hp[0]}"
+                        
+                        if (( hp[0] <= 0 )); then
+    type_out 'The rest of the day is a blur of mediocre'
+    type_out 'cat care. you call it a day early zzzz'
+    type_out 'zzzz'
+    sleep 1
+    type_out 'zzzzzzzzzz'
+    sleep 1
+    type_out 'zzzzzzzzzzzzzzz'
+    type_out 'Later in the night, cat assasinates you.'
+    type_out 'cat fact: cat has hooks in tongue to eat meat'
+    type_out 'the end'
+    exit 1  # exits the script so the game stops here
+fi
+                        
         ;;
-    
+        
+# Choice Feed cat
     2)
         type_out "you attempt to pick up the cat"
         type_out "the cat punishes you by swatting your hand"
