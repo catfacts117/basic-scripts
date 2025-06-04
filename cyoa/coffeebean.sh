@@ -233,7 +233,30 @@ case $choice in
             type_out "suddenly $catname jumps up on the couch"
             type_out 'and smacks the cereal bowl over the edge'
             type_out 'the bowl shatters on the floor'
-            type_out '
+            type_out "$catname starts eating your cereal for breakfast"
+            type_out 'you move to clean it up and step on a broken bowl shard'
+            type_out 'you cry out and cat looks pleased, and eats lucky charms'
+            type_out 'your day is off to a bad start, lose 2 hp'
+            sleep 1
+
+            ((hp[0]-=2))
+            
+            echo "Remaining HP: ${hp[0]}"
+                    #HP check
+                    if (( hp[0] <= 0 )); then
+                    type_out 'The rest of the day is a blur of mediocre'
+                    type_out 'cat care. you call it a day early zzzz'
+                    sleep 1
+                    type_out 'zzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzz'
+                    sleep 1
+                    type_out 'zzzzzzzzzzzzzzz'
+                    type_out 'Later in the night, cat assasinates you.'
+                    type_out 'cat fact: cat has hooks in tongue to eat meat'
+                    type_out '---the end---'
+                    exit 1
+                    fi
             ;;
     
     esac
