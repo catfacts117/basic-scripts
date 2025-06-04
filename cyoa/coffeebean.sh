@@ -125,18 +125,18 @@ echo
 type_out 'you get out of bed and rise,'
 type_out 'stretch, and rub your tired eyes'
 type_out "$catname looks at you innocently"
-echo '⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⡛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿'
-echo '⣿⣿⡿⠿⢿⣿⣿⡿⠏⣼⣿⣷⣌⠻⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿'
-echo '⣿⣿⢰⣿⣶⣌⣥⣶⣿⣿⡟⠻⢛⢷⣦⡍⠹⠋⡴⣲⡲⡌⢿⣿'
-echo '⣿⡇⣾⣿⡿⡛⢻⣿⣿⣿⣇⠩⠤⣹⣿⡿⢋⣼⣯⣤⣼⡷⢸⣿'
-echo '⢛⣣⣿⣿⡌⠀⡁⢸⢿⣦⣻⣿⣿⣿⣿⣡⣿⣿⣿⣿⣿⡇⣾⣿'
-echo '⡖⢹⣿⣿⣿⣶⣾⣿⣿⣷⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢰⣿⣿'
-echo '⡥⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢿⣿⣿'
-echo '⣷⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢠⣿⣿'
-echo '⣿⣷⠘⣿⣿⣿⣿⣿⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿'
-echo '⣿⡧⢈⣿⣿⣿⣿⣿⣿⡎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠨⣿'
-echo '⣿⡇⣹⣿⣿⣿⣿⣿⣿⣿⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠘'
-echo '⡟⢰⣿⣿⣿⣿⣦⣍⣉⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆'
+echo
+echo '        ⣼⣿⣷⣌  '
+echo '  ⢰⣿⣶⣌⣥⣶⣿⣿⡟⠻⢛⢷⣦⡍  ⡴⣲⡲.  '
+echo '  ⣾⣿⡿⡛⢻⣿⣿⣿⣇⠩⠤⣹⣿⡿⢋⣼⣯⣤⣼⡷ '
+echo '  ⣿⣿⡌⠀⡁⢸⢿⣦⣻⣿⣿⣿⣿⣡⣿⣿⣿⣿⣿⡇ '
+echo ' ⢹⣿⣿⣿⣶⣾⣿⣿⣷⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿ '
+echo ' ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇  '
+echo ' ⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ '
+echo '  ⠘⣿⣿⣿⣿⣿⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ '
+echo '  ⢈⣿⣿⣿⣿⣿⣿⡎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧ '
+echo '  ⣹⣿⣿⣿⣿⣿⣿⣿⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷ '
+echo ' ⢰⣿⣿⣿⣿⣦⣍⣉⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆'
 type_out 'from below and mews'
 sleep 1.5
 type_out 'your stomach grumbles'
@@ -181,7 +181,9 @@ case $choice in
                         type_out 'you have been warned, lose 1 hp'
                             sleep 1
                         
-                            ((hp[0]--)) echo "Remaining HP: ${hp[0]}"
+                            ((hp[0]--))
+                            
+                             echo "Remaining HP: ${hp[0]}"
                         
                         if (( hp[0] <= 0 )); then
                             type_out 'The rest of the day is a blur of mediocre'
