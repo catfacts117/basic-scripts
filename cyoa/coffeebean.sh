@@ -168,11 +168,12 @@ echo
 type_out 'you get out of bed and rise,'
 type_out 'stretch, and rub your tired eyes'
 type_out "$catname looks at you innocently"
+type_out 'from below and mews'
 echo
 echo '        ⣼⣿⣷⣌  '
 echo '  ⢰⣿⣶⣌⣥⣶⣿⣿⡟⠻⢛⢷⣦⡍  ⡴⣲⡲.  '
-echo '  ⣾⣿⡿⡛⢻⣿⣿⣿⣇⠩⠤⣹⣿⡿⢋⣼⣯⣤⣼⡷ '
-echo '  ⣿⣿⡌⠀⡁⢸⢿⣦⣻⣿⣿⣿⣿⣡⣿⣿⣿⣿⣿⡇ '
+echo '  ⣾⣿⡿⡛⢻⣿⣿⣿⣇⠩⠤⣹⣿⡿ ⣼⣯⣤⣼⡷ '
+echo '  ⣿⣿⡌⠀⡁⢸⢿⣦⣻⣿⣿⣿⣿⣿.⣿⣿⣿⣿⡇ '
 echo ' ⢹⣿⣿⣿⣶⣾⣿⣿⣷⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿ '
 echo ' ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇  '
 echo ' ⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ '
@@ -180,8 +181,7 @@ echo '  ⠘⣿⣿⣿⣿⣿⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ '
 echo '  ⢈⣿⣿⣿⣿⣿⣿⡎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧ '
 echo '  ⣹⣿⣿⣿⣿⣿⣿⣿⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷ '
 echo ' ⢰⣿⣿⣿⣿⣦⣍⣉⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆'
-type_out 'from below and mews'
-sleep 1.5
+sleep 2
 type_out 'your stomach grumbles'
 type_out 'it is time for breakfast'
 type_out 'you head toward the kitchen'
