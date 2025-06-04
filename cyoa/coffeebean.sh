@@ -13,11 +13,21 @@ type_out() {
   echo
 }
 
-# help
+#add_item
+add_item() {
+  local item="$1"
+  # Check if item already exists to avoid duplicates
+  if ! has_item "$item"; then
+    inventory+=("$item")
+    echo ">> You acquired a $item."
+  fi
+}
 
-help() {
-    echo 'To navigate, simply type the number to select your choice and hit enter'
-    }
+#item_check
+has_item() {
+  local item="$1"
+  [[ " ${inventory[*]} " == *" $item "* ]]
+}
 
 # Arrays
 inventory=()
@@ -84,8 +94,10 @@ read choice
 case $choice in
 
     1)
-        type_out "the sound of $catname's purring helps you drift back to sleep."
-        type_out 'you use the rest of the saturday strategically dreaming of pizza.'
+        type_out "the sound of $catname's purring helps "
+        type_out 'you drift back to sleep.'
+        type_out 'you use the rest of the saturday'
+        type_out 'strategically dreaming of pizza.'
         type_out 'rest for resistance.'
         type_out '---the end.---'
         exit
@@ -94,7 +106,8 @@ case $choice in
     2)
         type_out "you attempt to pick up $catname."
         type_out "$catname punishes you by swatting your hand,"
-        type_out 'then leaps off your face, digging its hind paws into your cheek.'
+        type_out 'then leaps off your face, digging its'
+        type_out 'hindpaws into your cheek.'
         type_out '...'
         type_out 'you are awake.'
         ;;
@@ -106,13 +119,27 @@ echo
 sleep 2
 echo
 
-type_out 'you get out of bed and rise, stretch, and rub your tired eyes'
-type_out "$catname looks at you innocently from below and mews"
+type_out 'you get out of bed and rise,'
+type_out 'stretch, and rub your tired eyes'
+type_out "$catname looks at you innocently"
+echo '⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⡛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿'
+echo '⣿⣿⡿⠿⢿⣿⣿⡿⠏⣼⣿⣷⣌⠻⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿'
+echo '⣿⣿⢰⣿⣶⣌⣥⣶⣿⣿⡟⠻⢛⢷⣦⡍⠹⠋⡴⣲⡲⡌⢿⣿'
+echo '⣿⡇⣾⣿⡿⡛⢻⣿⣿⣿⣇⠩⠤⣹⣿⡿⢋⣼⣯⣤⣼⡷⢸⣿'
+echo '⢛⣣⣿⣿⡌⠀⡁⢸⢿⣦⣻⣿⣿⣿⣿⣡⣿⣿⣿⣿⣿⡇⣾⣿'
+echo '⡖⢹⣿⣿⣿⣶⣾⣿⣿⣷⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢰⣿⣿'
+echo '⡥⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢿⣿⣿'
+echo '⣷⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢠⣿⣿'
+echo '⣿⣷⠘⣿⣿⣿⣿⣿⡟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿'
+echo '⣿⡧⢈⣿⣿⣿⣿⣿⣿⡎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠨⣿'
+echo '⣿⡇⣹⣿⣿⣿⣿⣿⣿⣿⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠘'
+echo '⡟⢰⣿⣿⣿⣿⣦⣍⣉⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆'
+type_out 'from below and mews'
 type_out 'your stomach grumbles'
 type_out 'it is time for breakfast'
 type_out 'you head toward the kitchen'
-type_out "$catname rushes ahead of you drifting on the tile,"
-type_out 'and bouncing off the walls.'
+type_out "$catname rushes ahead of you drifting on the"
+type_out 'tile, and bouncing off the walls.'
 type_out 'do you..'
 
 echo '------'
@@ -125,11 +152,7 @@ read choice
 case $choice in
 
     1)
-        type_out "the sound of purring helps you drift back to sleep."
-        type_out "you use the rest of the saturday strategically dreaming of pizza."
-        type_out "rest for resistance."
-        type_out "---the end.---"
-        exit
+                exit
         ;;
     
     2)
