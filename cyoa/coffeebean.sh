@@ -195,12 +195,12 @@ case $choice in
                             type_out 'zzzzzzzzzzzzzzz'
                             type_out 'Later in the night, cat assasinates you.'
                             type_out 'cat fact: cat has hooks in tongue to eat meat'
-                            type_out 'the end'
+                            type_out '---the end---'
     
                                 exit 1  # exits the script so the game stops here
                         fi
                # Choice Eat @ couch
-                    2.)
+                    2)
                     
                     
                         esac
