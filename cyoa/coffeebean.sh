@@ -132,6 +132,11 @@ case $choice in
         type_out '...'
         type_out 'you are awake.'
         ;;
+        
+    *)
+        type_out 'you grumble, and keep thinking about'
+        type_out 'what to do...'
+        ;;
 esac
 
 ### 1.1
