@@ -179,6 +179,7 @@ case $choice in
           type_out 'you pour lucky charms and milk'
           type_out 'out into the bowl. looks good.'
           add_item "cereal bowl"
+          
           type_out "where do you want to eat?"
             echo '------'
             echo '1. eat cereal at the table'
@@ -204,7 +205,7 @@ case $choice in
                              echo "Remaining HP: ${hp[0]}"
                         
                         if (( hp[0] <= 0 )); then
-                            type_out 'The rest of the day is a blur of mediocre'
+                            type_out 'the rest of the day is a blur of mediocre'
                             type_out 'cat care. you call it a day early zzzz'
                             type_out 'zzzz'
                             sleep 1
@@ -215,13 +216,20 @@ case $choice in
                             type_out 'cat fact: cat has hooks in tongue to eat meat'
                             type_out '---the end---'
                                 exit 1  # exits the script so the game stops here
+                            fi
                             ;;
                # Choice Eat @ couch
                     2)
-                    
-                    
-                        esac
+                        #######TEMPLATE#######
+                         type_out "you sit on the couch, cereal in hand"
+                         type_out "$catname stares, but you hold your ground"
+                         type_out "you both live to eat another day"
                             ;;
+                    *)
+                         type_out "that's not a valid cereal eating spot"
+                            ;;
+                        esac
+                    ;;
         
 # Choice Feed cat
     2)
