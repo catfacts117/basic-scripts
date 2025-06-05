@@ -337,31 +337,34 @@ case $choice in
     ((hp[0]=+))
     echo "Remaining HP: ${hp[0]}"
             
-                #HP check
-                    if (( hp[0] <= 0 )); then
-                    type_out 'The rest of the day is a blur of mediocre'
-                    type_out 'cat care. you call it a day early zzzz'
-                    sleep 1
-                    type_out 'zzzz'
-                    sleep 1
-                    type_out 'zzzzzzzzzz'
-                    sleep 1
-                    type_out 'zzzzzzzzzzzzzzz'
-                    type_out 'Later in the night, cat assasinates you.'
-                    type_out 'cat fact: cat has hooks in tongue to eat meat'
-                    type_out '---the end---'
-                    exit 1
-                    fi
-    
+            #HP check
+            if (( hp[0] <= 0 )); then
+                type_out 'The rest of the day is a blur of mediocre'
+                type_out 'cat care. you call it a day early zzzz'
+                sleep 1
+                type_out 'zzzz'
+                sleep 1
+                type_out 'zzzzzzzzzz'
+                sleep 1
+                type_out 'zzzzzzzzzzzzzzz'
+                type_out 'Later in the night, cat assasinates you.'
+                type_out 'cat fact: cat has hooks in tongue to eat meat'
+                type_out '---the end---'
+                exit 1
+            fi
+                    
+        ;;
+    esac
+
     type_out 'suddenly you hear a mew in distress!'
-    type_out "$catname runs towards the door to investigate'
+    type_out "$catname runs towards the door to investigate"
     type_out 'you follow your feline friend to the porch door'
     type_out 'theres a cat outside'
     type_out 'do you...'
     
     echo
     echo '------'
-    echo '1. give guest cat cereal bowl with milk '
+    echo '1. give guest cat cereal bowl with milk'
     echo '2. give guest cat toy mouse'
     echo '------'
     echo
@@ -382,7 +385,7 @@ case $choice in
             type_out 'the cat sips quietly.'
             type_out 'you close the door and leave them be'
             type_out "$catname and you watch awhile from"
-            type_out 'inside... then the cat leaves quietly
+            type_out 'inside... then the cat leaves quietly'
             type_out "you look at $catname"
             type_out "$catname gives you a mew of approval"
             type_out 'it is a good saturday'
@@ -391,24 +394,18 @@ case $choice in
             ;;
         
         # give toy mouse
-      
-      
         2)
-            type_out '
-            type_out 'you turn on your fav show'
-            type_out "suddenly $catname jumps up on the couch"
-            type_out 'and smacks the cereal bowl over the edge'
-            type_out 'the bowl shatters on the floor'
-            type_out "$catname starts eating your cereal for breakfast"
-            type_out 'you move to clean it up and step on a broken bowl shard'
-            type_out 'you cry out and cat looks pleased, and eats lucky charms'
-            type_out 'your day is off to a bad start, LOSE 2 hp'
-            sleep 1
-
-            ((hp[0]-=2))
+            type_out 'you remember the toy mouse in your pocket'
+            type_out 'you kneel down to observe the guest kitty,'
+            type_out 'then open the door and toss it on the balcony'
+            type_out "$catname mrows and swats your face to punish you"
+            type_out 'LOSE 1 hp'
+            
+            ((hp[0]--))
             
             echo "Remaining HP: ${hp[0]}"
-                    #HP check
+            
+                #HP check
                     if (( hp[0] <= 0 )); then
                     type_out 'The rest of the day is a blur of mediocre'
                     type_out 'cat care. you call it a day early zzzz'
@@ -426,5 +423,4 @@ case $choice in
             ;;
     
     esac
-    ;;
-esac
+
