@@ -307,7 +307,30 @@ case $choice in
     
     type_out "$catname finishes eating cat fuel"
     type_out 'your stomach growls again'
+    type_out 'you reach for the cupboard'
+    type_out "$catname mews playfully"
     
+    
+    echo '     /⡛\         /⣛\ '
+    echo '    /⣿⣿⣌⣍⠄⣆⠄⡆⢀⣙⣡⣿⣿| '
+    echo '   /⢸⣿⣿⣿⣿⣾⣿⣾⣿⣾⣿⣿⣿⠏| '
+    echo '  ⠏⣴⣿⣿⣿⠛⠛⣿⣿⣿⣿⡿⠛⠻⣿⣴⡌\ '
+    echo ' |⢈⣹⣿⣿⣿⣦⣥⣿⢯⠉⣿⣷⣬⣴⣿⣯⡲ | '
+    echo ' |⢰⣾⣿⣿⣿⣿⣿⣿⣷⣶⣾⣿⣿⣿⣿⣿⡏/ '
+    echo '  \⣸⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\ '
+    echo '  /⣿⣿⣿⣿⣌⠻⣿⣿⣿⣿⣿⣿⠟⣡⣾⣿⣿|  /⢛\ '
+    echo ' /⣀⣬⣿⣦⣝⠛⢃⣼⣿⣿⣿⣿⣿⣘⢛⣫⣴⣿/  \⣼\ '
+    echo ' ⡏⠉⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿|    \⡄\ '
+    echo ' ⡟⠛⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣦⡀  /⣧| '
+    echo ' \⢠⣾⣿⣿⣏⣛⡻⢿⣿⣿⣿⣿⠿⣋⣴⣿⣿⣿⣿⣧⣭/⡴⣿/ '
+    echo '  \⣦⡙⢿⡿⠿⢿⣿⠆⣿⣿⣿⠸⡿⠟⡋⠼⢛⣛⣛⣛⣃/ '
+    echo
+
+sleep 2
+    
+    
+    type_out 'you pour lucky charms and milk'
+    type_out 'out into the bowl. looks good.'
     
     read choice
 
