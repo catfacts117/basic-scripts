@@ -102,6 +102,11 @@ type_out 'weekend with your feline friend'
 
 echo ------
 
+            #    Play Again
+                    play_again="yes"
+                        while [[ "$play_again" == "yes" || "$play_again" == "y" ]]; do
+                        clear
+
 type_out 'what is your feline friends name?'
 echo
 read catname
@@ -361,6 +366,29 @@ case $choice in
     type_out "$catname runs towards the door to investigate"
     type_out 'you follow your feline friend to the porch door'
     type_out 'theres a cat outside'
+    
+echo '   ⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'  ⢸⣿⣷⣆⡀⠀⠀⠀⠀⢀⣴⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'⠀⠀
+echo⠀'  ⣿⣿⣿⣿⣷⣶⣶⣶⣶⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'⠀
+echo ' ⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo ' ⠘⣿⣿⠟⢛⡻⣿⣿⣿⡿⢛⡛⢻⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'  ⢿⣯⡀⠻⠇⣻⣿⣿⡇⠻⠇⢠⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'  ⠘⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'⠀  ⠈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'⠀ ⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'⠀ ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'⠀ ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀'
+echo⠀'⠀ ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀'⠀⠀⠀
+echo⠀'⠀ ⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀'⠀⠀
+echo⠀'⠀⠀ ⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀'⠀
+echo⠀'⠀⠀ ⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'⠀⠀ ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀'
+echo⠀'⠀⠀ ⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣀⡀⠀⠀'
+echo⠀'⠀ ⠀⣾⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⡿⠿⠿⢿⣿⣿⣿⣿⣷⡄'
+echo⠀'⠀ ⠀⠀⠉⠉⠉⠁⠉⠉⠉⠁⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀⠀⠈⠙⣿⣿⣿'
+echo⠀'⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣾⣿⣿⠏'
+echo⠀'⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀ '
+    
     type_out 'do you...'
     
     echo
@@ -379,10 +407,10 @@ case $choice in
         1)
             type_out 'you open the door and place the'
             type_out 'remainder cereal bowl milk for the'
+            type_out 'cat outside.'
             
             remove_item "cereal bowl"
             
-            type_out 'cat outside.'
             type_out 'the cat sips quietly.'
             type_out 'you close the door and leave them be'
             type_out "$catname and you watch awhile from"
@@ -425,3 +453,14 @@ case $choice in
     
     esac
 
+echo 'WIP'
+
+                #End of game loop
+                echo
+                read -p "Do you want to play again? (yes/no): " play_again
+                done
+
+echo 'cat waves goodbye!'
+echo　 '＜⌒／ヽ-､_＿_'
+echo '／＜_/＿＿＿＿／'
+echo '￣￣￣￣￣￣￣'
