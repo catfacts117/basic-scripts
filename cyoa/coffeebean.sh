@@ -423,8 +423,9 @@ echo⠀'⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈�
             type_out 'it is a good saturday'
             
             sleep 1
+            fi
             ;;
-        fi
+    
         # give toy mouse
         2)
             type_out 'you remember the toy mouse in your pocket'
