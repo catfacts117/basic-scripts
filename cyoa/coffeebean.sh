@@ -333,7 +333,7 @@ case $choice in
     add_item "cereal_bowl"
     type_out 'you enjoy spoonful after spoonful'
     type_out 'its a great saturday'
-    type_pit 'GAIN 1 hp'
+    type_out 'GAIN 1 hp'
     
     ((hp[0]++))
     echo "Remaining HP: ${hp[0]}"
