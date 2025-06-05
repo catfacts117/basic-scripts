@@ -33,7 +33,7 @@ remove_item () {
         fi
     done
     inventory=("${new_inventory[@]}")  # Now backpack has updated items
-    echo ">> $item_to_remove was removed from your $inventory."
+    echo ">> $item_to_remove was removed from your inventory."
 }
 
     
@@ -326,30 +326,18 @@ case $choice in
     echo '  \⣦⡙⢿⡿⠿⢿⣿⠆⣿⣿⣿⠸⡿⠟⡋⠼⢛⣛⣛⣛⣃/ '
     echo
 
-sleep 2
-    
+    sleep 2
     
     type_out 'you pour lucky charms and milk'
     type_out 'out into the bowl. looks good.'
+    add_item "cereal_bowl"
+    type_out 'you enjoy spoonful after spoonful'
+    type_out 'its a great saturday'
     
-    read choice
-
-    case $choice in
-        # Choice Eat @ table
-        1)
-            type_out 'you sit at the table'
-            type_out 'you enjoy spoonful after spoonful'
-            type_out 'its a great saturday'
-            type_out 'suddenly you feel a sharp pain in'
-            type_out 'your ankle. kitty attack!'
-            type_out "$catname is not pleased"
-            type_out 'you have been warned, LOSE 1 hp'
-            sleep 1
-
-            ((hp[0]--))
-
-            echo "Remaining HP: ${hp[0]}"
-                    #HP check
+    ((hp[0]=+))
+    echo "Remaining HP: ${hp[0]}"
+            
+                #HP check
                     if (( hp[0] <= 0 )); then
                     type_out 'The rest of the day is a blur of mediocre'
                     type_out 'cat care. you call it a day early zzzz'
@@ -364,11 +352,49 @@ sleep 2
                     type_out '---the end---'
                     exit 1
                     fi
+    
+    type_out 'suddenly you hear a mew in distress!'
+    type_out "$catname runs towards the door to investigate'
+    type_out 'you follow your feline friend to the porch door'
+    type_out 'theres a cat outside'
+    type_out 'do you...'
+    
+    echo
+    echo '------'
+    echo '1. give guest cat cereal bowl with milk '
+    echo '2. give guest cat toy mouse'
+    echo '------'
+    echo
+        
+    read choice
+
+    case $choice in   
+        
+        #give cereal bowl
+       
+        1)
+            type_out 'you open the door and place the'
+            type_out 'remainder cereal bowl milk for the'
+            
+            remove_item "cereal bowl"
+            
+            type_out 'cat outside.'
+            type_out 'the cat sips quietly.'
+            type_out 'you close the door and leave them be'
+            type_out "$catname and you watch awhile from"
+            type_out 'inside... then the cat leaves quietly
+            type_out "you look at $catname"
+            type_out "$catname gives you a mew of approval"
+            type_out 'it is a good saturday'
+            
+            sleep 1
             ;;
         
-        # Choice Eat @ couch
+        # give toy mouse
+      
+      
         2)
-            type_out 'you sit at the couch'
+            type_out '
             type_out 'you turn on your fav show'
             type_out "suddenly $catname jumps up on the couch"
             type_out 'and smacks the cereal bowl over the edge'
