@@ -421,9 +421,9 @@ echo⠀'⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈�
             type_out "you look at $catname"
             type_out "$catname gives you a mew of approval"
             type_out 'it is a good saturday'
-            
-            sleep 1
             fi
+            sleep 1
+        
             ;;
     
         # give toy mouse
