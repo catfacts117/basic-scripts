@@ -105,7 +105,7 @@ echo ------
             #    Play Again
                     play_again="yes"
                         while [[ "$play_again" == "yes" || "$play_again" == "y" ]]; do
-                        clear
+                        
 
 type_out 'what is your feline friends name?'
 echo
