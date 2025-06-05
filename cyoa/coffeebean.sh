@@ -405,8 +405,7 @@ echo⠀'⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈�
         #give cereal bowl
        
         1)
-        
-        if $inventory = "Cereal bowl" then
+    
         
             type_out 'you open the door and place the'
             type_out 'remainder cereal bowl milk for the'
@@ -421,7 +420,7 @@ echo⠀'⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈�
             type_out "you look at $catname"
             type_out "$catname gives you a mew of approval"
             type_out 'it is a good saturday'
-            fi
+            
             sleep 1
         
             ;;
