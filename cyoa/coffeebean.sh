@@ -400,7 +400,7 @@ cat <<'EOF'
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀
 EOF
     type_out 'it stares into your soul without moving'
-    type_out 'the kitty knows all your secrets in that instance'
+    type_out 'the kitty knows all your secrets in that instant'
     sleep 2
     
     type_out 'do you...'
