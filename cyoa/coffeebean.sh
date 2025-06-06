@@ -264,15 +264,16 @@ case $choice in
             type_out 'the bowl shatters on the floor'
             
             sleep 1
-            
+            echo '------'
             remove_item "cereal bowl"
+            echo '------'
             
             type_out "$catname starts eating your cereal for breakfast"
             type_out 'you move to clean up & step on a cereal bowl shard'
             type_out "you cry out. $catname eats lucky charms fast"
             type_out 'your day is off to a bad start, LOSE 2 hp'
             sleep 1
-
+            echo
             ((hp[0]-=2))
             
             echo "Remaining HP: ${hp[0]}"
@@ -343,7 +344,7 @@ case $choice in
     type_out 'you enjoy spoonful after spoonful'
     type_out 'its a great saturday'
     type_out 'GAIN 1 hp'
-    
+    echo
     ((hp[0]++))
     echo "Remaining HP: ${hp[0]}"
     
