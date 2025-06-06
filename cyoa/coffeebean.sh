@@ -425,7 +425,9 @@ EOF
             type_out 'remainder cereal bowl milk for the'
             type_out 'cat outside.'
             
+            echo '------'
             remove_item "cereal bowl"
+            echo '------'
             
             type_out 'the cat sips quietly.'
             type_out 'you close the door and leave them be'
