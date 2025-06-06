@@ -335,7 +335,11 @@ case $choice in
     
     type_out 'you pour lucky charms and milk'
     type_out 'out into the bowl. looks good.'
+    
+    echo '------'
     add_item "cereal_bowl"
+    echo '------'
+    
     type_out 'you enjoy spoonful after spoonful'
     type_out 'its a great saturday'
     type_out 'GAIN 1 hp'
@@ -470,6 +474,22 @@ echo 'WIP'
                 done
 
 echo 'cat waves goodbye!'
-echo　 '＜⌒／ヽ-､_＿_'
-echo '／＜_/＿＿＿＿／'
-echo '￣￣￣￣￣￣￣'
+cat <<'EOF'
+⠀⠀⠀⢠⡶⢦⡀⠀⠀⠀⢀⣴⠖⣦
+⠀⠀⠀⡿⢀⠀⢳⡀⠀⢀⡾⢁⢤⠘⡇
+⠀⠀⢸⡇⡇⢣⢸⡧⠶⢼⠃⡜⢸⠀⡇⠀
+⠀⠀⢸⡀⢃⠞⠀⠀⠀⠀⠀⠉⠁⠀⡇
+⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣄⣀⡀
+⠀⠀⣾⠁⠀⣤⡀⠀⢀⠀⢰⣿⠀⠀⡲⣿⡖⠂⠀⠀⠀
+⢒⣲⣟⠀⠀⠉⠁⠀⠈⠈⠀⠀⠀⠀⣀⡿⢁⣤⠖⢲⡆
+⠀⠈⠳⣤⣄⣀⣀⠀⠀⠀⠀⠀⠰⣾⠋⠀⡜⠁⠐⢸⠃
+⠀⠀⠀⠀⠀⣟⠁⠀⠀⠀⠀⠀⠀⠙⡇⠀⡇⠀⠀⡏
+⠀⠀⠀⠀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⣧⠀⡇⠀⠀⡇
+⠀⠀⠀⡼⠁⢀⠀⠀⠀⠠⢀⠀⠀⠀⠜⣷⠇⠀⠀⡇
+⠀⠀⣴⠃⠀⢺⠀⠀⠀⠀⠈⠀⠀⠀⠐⠠⠂⠑⢰⠇
+⠀⠀⣿⠀⠀⠀⡄⠀⠀⠀⠀⡆⠀⠀⡆⠀⠃⣠⠟⠀⠀
+⠀⠀⠈⢦⡀⠀⢰⠀⠀⢠⠀⡇⠀⠀⠁⠀⣿⠁
+⠀⠀⠀⠀⠈⠛⠢⢷⣤⡬⠤⢧⣠⡼⠤⠚⠁
+EOF
+
+
