@@ -367,7 +367,7 @@ case $choice in
     type_out 'you follow your feline friend to the porch door'
     type_out 'theres a cat outside'
     
-    cat <<EOF
+cat <<'EOF'
 
 ⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⢸⣿⣷⣆⡀⠀⠀⠀⠀⢀⣴⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -390,7 +390,7 @@ case $choice in
 ⠀⠀⠀⠀⠉⠉⠉⠁⠉⠉⠉⠁⠀⠈⠉⠉⠁⠀⠀⠀⠀⠀⠀⠈⠙⣿⣿⣿
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣾⣿⣿⠏
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀
-    EOF
+EOF
     type_out 'it stares into your soul without moving'
     type_out 'the kitty knows all your secrets in that instance'
     sleep 2
