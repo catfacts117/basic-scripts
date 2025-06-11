@@ -278,7 +278,7 @@ case $choice in
         
             sleep 1
             echo LOSE 1 hp
-            echo
+        
             ((hp[0]-=2))
             
             echo "Remaining HP: ${hp[0]}"
@@ -443,6 +443,11 @@ strangercatchoice () {
             type_out 'it is a good saturday'
             
             sleep 1
+            echo 'GAIN 1 hp'
+            echo
+            ((hp[0]++))
+            echo "Remaining HP: ${hp[0]}"
+
         
         else
         
