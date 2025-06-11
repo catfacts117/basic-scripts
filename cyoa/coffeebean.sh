@@ -274,8 +274,10 @@ case $choice in
             type_out "$catname starts eating your cereal for breakfast"
             type_out 'you move to clean up & step on a cereal bowl shard'
             type_out "you cry out. $catname eats lucky charms fast"
-            type_out 'your day is off to a bad start, LOSE 2 hp'
+            type_out 'your day is off to a bad start'
+        
             sleep 1
+            echo LOSE 1 hp
             echo
             ((hp[0]-=2))
             
@@ -445,7 +447,7 @@ strangercatchoice () {
         else
         
         echo '------'
-        type_out "You do not have a cereal bowl."
+        type_out "You do not have a cereal_bowl. Select another choice."
         echo '------'
         
         strangercatchoice
@@ -460,6 +462,8 @@ strangercatchoice () {
             type_out 'you kneel down to observe the guest kitty,'
             type_out 'then open the door and toss it on the balcony'
             type_out "$catname mrows and swats your face to punish you"
+            
+            sleep 1
             type_out 'LOSE 1 hp'
             
             ((hp[0]--))
@@ -479,6 +483,7 @@ strangercatchoice () {
                     type_out 'Later in the night, cat assasinates you.'
                     type_out 'cat fact: cat has hooks in tongue to eat meat'
                     type_out '---the end---'
+                    
                     exit 1
                     fi
             ;;
@@ -490,7 +495,7 @@ strangercatchoice () {
 #Above is scene below is call scene
 strangercatchoice
 
-
+#Continue story here, WHERE YOU LEFT OFF WIP
 
 echo 'WIP'
 
