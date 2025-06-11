@@ -215,7 +215,7 @@ case $choice in
     type_out 'out into the bowl. looks good.'
     
     echo '------'
-    add_item "cereal bowl"
+    add_item "cereal_bowl"
     echo '------'
     
     type_out "where do you want to eat?"
@@ -268,7 +268,7 @@ case $choice in
             
             sleep 1
             echo '------'
-            remove_item "cereal bowl"
+            remove_item "cereal_bowl"
             echo '------'
             
             type_out "$catname starts eating your cereal for breakfast"
@@ -311,7 +311,7 @@ case $choice in
     type_out 'you pick up and put the toy mouse in your pocket'
     
     echo '------'
-    add_item "toy mouse"
+    add_item "toy_mouse"
     echo '------'
     
     type_out "$catname finishes eating cat fuel"
@@ -419,17 +419,17 @@ strangercatchoice () {
 
     case $choice in   
         
-        #give cereal bowl ###### DO A INVENTORY CHECK FOR THIS OPTION WIP ########
+        #give cereal bowl
        
         1)
     
-         if has_item "cereal bowl"; then
+         if has_item "cereal_bowl"; then
             type_out 'you open the door and place the'
             type_out 'remainder cereal bowl milk for the'
             type_out 'cat outside.'
             
             echo '------'
-            remove_item "cereal bowl"
+            remove_item "cereal_bowl"
             echo '------'
             
             type_out 'the cat sips quietly.'
