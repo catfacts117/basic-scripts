@@ -414,7 +414,7 @@ strangercatchoice () {
     echo '2. give guest cat toy mouse'
     echo '------'
     echo
-        }
+        
     read choice
 
     case $choice in   
@@ -446,7 +446,7 @@ strangercatchoice () {
         strangercatchoice
             fi
           ;;
-      
+        
     
         # give toy mouse
         2)
@@ -479,6 +479,7 @@ strangercatchoice () {
     
     esac
 
+}
 echo 'WIP'
 
                 #End of game loop
