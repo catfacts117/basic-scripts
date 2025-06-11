@@ -444,8 +444,9 @@ strangercatchoice () {
         
         else type_out "You do not have a cereal bowl."
         strangercatchoice
-    
-            ;;
+            fi
+          ;;
+      
     
         # give toy mouse
         2)
