@@ -442,9 +442,15 @@ strangercatchoice () {
             
             sleep 1
         
-        else type_out "You do not have a cereal bowl."
+        else
+        
+        echo '------'
+        type_out "You do not have a cereal bowl."
+        echo '------'
+        
         strangercatchoice
             fi
+            
           ;;
         
     
