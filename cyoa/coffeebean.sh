@@ -480,6 +480,12 @@ strangercatchoice () {
     esac
 
 }
+
+#Above is scene below is call scene
+strangercatchoice
+
+
+
 echo 'WIP'
 
                 #End of game loop
