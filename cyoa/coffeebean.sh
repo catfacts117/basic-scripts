@@ -399,8 +399,11 @@ cat <<'EOF'
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣾⣿⣿⠏
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀
 EOF
+   
+strangercatchoice () {
     type_out 'it stares into your soul without moving'
     type_out 'the kitty knows all your secrets in that instant'
+
     sleep 2
     
     type_out 'do you...'
@@ -411,7 +414,7 @@ EOF
     echo '2. give guest cat toy mouse'
     echo '------'
     echo
-        
+        }
     read choice
 
     case $choice in   
@@ -420,7 +423,7 @@ EOF
        
         1)
     
-        
+         if has_item "cereal bowl"; then
             type_out 'you open the door and place the'
             type_out 'remainder cereal bowl milk for the'
             type_out 'cat outside.'
@@ -439,6 +442,9 @@ EOF
             
             sleep 1
         
+        else type_out "You do not have a cereal bowl."
+        strangercatchoice
+    
             ;;
     
         # give toy mouse
