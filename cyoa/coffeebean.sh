@@ -322,7 +322,7 @@ case $choice in
     type_out "$catname mews playfully"
     
     
-    echo '     /⡛\         /⣛\ '
+    echo '     /⡛\        /⣛\ '
     echo '    /⣿⣿⣌⣍⠄⣆⠄⡆⢀⣙⣡⣿⣿| '
     echo '   /⢸⣿⣿⣿⣿⣾⣿⣾⣿⣾⣿⣿⣿⠏| '
     echo '  ⠏⣴⣿⣿⣿⠛⠛⣿⣿⣿⣿⡿⠛⠻⣿⣴⡌\ '
@@ -371,7 +371,7 @@ case $choice in
                     
         ;;
     esac
-
+    echo
     type_out 'suddenly you hear a mew in distress!'
     type_out "$catname runs towards the door to investigate"
     type_out 'you follow your feline friend to the porch door'
