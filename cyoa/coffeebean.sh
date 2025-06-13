@@ -509,6 +509,8 @@ echo 'WIP'
                 read -p "Do you want to play again? (yes/no): " play_again
                 done
 
+
+type_out 'thx for playing!'
 echo 'cat waves goodbye!'
 cat <<'EOF'
 ⠀⠀⠀⢠⡶⢦⡀⠀⠀⠀⢀⣴⠖⣦
