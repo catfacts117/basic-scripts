@@ -116,7 +116,7 @@ read catname
 echo " >> $catname is a good name "
 
 
-### 1.0
+### c1
 echo
 echo
 echo Chapter 1
@@ -167,7 +167,7 @@ case $choice in
         ;;
 esac
 
-### c1.1
+### c2
 
 echo
 sleep 2
@@ -372,7 +372,7 @@ case $choice in
         ;;
     esac
     
-# c1.2
+# c3
     
     
     echo
@@ -506,7 +506,7 @@ strangercatchoice () {
 
 strangercatchoice
 
-# c1.3
+# c4
 
 type_out 'a bird lands on the porch railing'
 type_out "$catname cheer mews in excitement"
