@@ -504,14 +504,14 @@ strangercatchoice
 
 #1.2
 
-type_out 'the stranger cat sees a tiny bird land'
-type_out 'on the porch railing'
-type_out 'stranger cat jumps up and away as it chases the bird away'
-type_out "$catname cheer mews in excitement watching stranger cat leave"
+type_out 'a bird lands on the porch railing'
+type_out "$catname cheer mews in excitement"
 type_out 'it is now midday'
+type_out "you realize $catname is bored"
 type_out "you decide to play with $catname a bit before taking a nap"
-echo -You have $inventory in your inventory-
 
+echo -You have $inventory in your inventory-
+###wip if inv is empty?
 
           
           
