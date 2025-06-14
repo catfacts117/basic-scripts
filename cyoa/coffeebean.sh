@@ -497,21 +497,34 @@ strangercatchoice () {
 
 }
 
-#Above is scene below is call scene
+#Above is scene
+#Below is call scene
+
 strangercatchoice
 
-#Continue story here, WHERE YOU LEFT OFF WIP
+#1.2
 
-echo 'WIP'
+type_out 'the stranger cat sees a tiny bird land'
+type_out 'on the porch railing'
+type_out 'stranger cat jumps up and away as it chases the bird away'
+type_out "$catname cheer mews in excitement watching stranger cat leave"
+type_out 'it is now midday'
+type_out "you decide to play with $catname a bit before taking a nap"
+echo -You have $inventory in your inventory-
 
-                #End of game loop
+
+          
+          
+          
+          
+########################## End of game loop ###########################
                 echo
-                read -p "Do you want to play again? (yes/no): " play_again
+                read -p "Do you want to play again? (yes/no):" play_again
                 done
 
 
 type_out 'thx for playing!'
-echo 'cat waves goodbye!'
+echo ' *cat waves goodbye!* '
 cat <<'EOF'
 ⠀⠀⠀⢠⡶⢦⡀⠀⠀⠀⢀⣴⠖⣦
 ⠀⠀⠀⡿⢀⠀⢳⡀⠀⢀⡾⢁⢤⠘⡇
