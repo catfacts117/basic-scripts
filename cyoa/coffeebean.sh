@@ -321,7 +321,7 @@ case $choice in
     type_out 'you reach for the cupboard'
     type_out "$catname mews playfully"
     
-    
+    echo
     echo '     /⡛\        /⣛\ '
     echo '    /⣿⣿⣌⣍⠄⣆⠄⡆⢀⣙⣡⣿⣿| '
     echo '   /⢸⣿⣿⣿⣿⣾⣿⣾⣿⣾⣿⣿⣿⠏| '
