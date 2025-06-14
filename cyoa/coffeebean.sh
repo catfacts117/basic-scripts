@@ -167,7 +167,7 @@ case $choice in
         ;;
 esac
 
-### 1.1
+### c1.1
 
 echo
 sleep 2
@@ -371,6 +371,10 @@ case $choice in
                     
         ;;
     esac
+    
+# c1.2
+    
+    
     echo
     type_out 'suddenly you hear a mew in distress!'
     type_out "$catname runs towards the door to investigate"
@@ -502,7 +506,7 @@ strangercatchoice () {
 
 strangercatchoice
 
-#1.2
+# c1.3
 
 type_out 'a bird lands on the porch railing'
 type_out "$catname cheer mews in excitement"
@@ -511,7 +515,10 @@ type_out "you realize $catname is bored"
 type_out "you decide to play with $catname a bit before taking a nap"
 
 echo -You have $inventory in your inventory-
-###wip if inv is empty?
+
+
+
+#wip if inv is empty?
 
           
           
